@@ -1,29 +1,31 @@
 body {
-    background-color: #45A29E;
+    background-color: #8E8D8A;
     font-family: Arial, sans-serif;
     color: #000;
     margin: 0px;
     padding: 0;
 }
 #about h2 {
-    color: #1F2833;
+    color: #EAE7DC;
     margin-bottom: 20px;
     
 }
 #about p {
-    color: #1F2833;
+    color: #8E8D8A;
     line-height: 1.6;
+    font-weight: bold;
 }
-/* potential color scheme 
-#0B0C10
-#1F2833
-#C5C6C7
-#66FCF1
-#45A29E
+/* 
 
+#EAE7DC
+#D8C3A5
+#8E8D8A
+#E98074
+#E85A4F
 */
+
 #about {
-    background-color: #45A29E;
+    background-color: #EAE7DC;
     padding: 20px;
 }
 #about .About-Container {
@@ -59,7 +61,7 @@ body {
   
   /* The button used to open the dropdown */
   .dropbtn {
-    background-color: #66FCF1;
+    background-color: #D8C3A5;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -67,39 +69,51 @@ body {
     cursor: pointer;
   }
   
-  /* Dropdown content (hidden by default) */
-  /* .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #82f28f;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
   
-  /* Links inside the dropdown 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+
+nav {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D8C3A5;
   
-  /* Change color of dropdown links on hover 
-  .dropdown-content a:hover {background-color: #1a8c00}
+}
+
+li {
+  float: left;
+ 
+}
+
+li a {
   
-  /* Show the dropdown menu on hover 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown 
-  .dropdown:hover .dropbtn {
-    background-color: #3dcc42;
-  }
-  .Skills {
-    background: transparent;
-    background-color: #3dcc42;
-    background-blend-mode: multiply;
-    background: inherit;
-} */
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+li a.split {
+  float: right;
+}
+li a:hover {
+  background-color: #8f8270;
+}
+
+.main-info h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.main-info p {
+  text-align: center;
+}

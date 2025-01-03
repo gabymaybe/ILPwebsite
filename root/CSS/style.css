@@ -1,5 +1,17 @@
+/* 
+
+#EAE7DC
+#D8C3A5
+#8E8D8A
+#E98074
+#E85A4F
+*/
+
+
+
+
 body {
-    background-color: #45A29E;
+    background-color: #EAE7DC;
     font-family: Arial, sans-serif;
     color: #000;
     margin: 0px;
@@ -77,7 +89,7 @@ section {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #82f28f;
+    background-color: #D8C3A5;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -92,7 +104,7 @@ section {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #1a8c00}
+  .dropdown-content a:hover {background-color: #8E8D8A}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -101,7 +113,7 @@ section {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
-    background-color: #3dcc42;
+    background-color: #8E8D8A;
   }
 
   .Social-Links {
