@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     background-color: #8E8D8A;
     font-family: Arial, sans-serif;
@@ -5,16 +10,9 @@ body {
     margin: 0px;
     padding: 0;
 }
-#about h2 {
-    color: #EAE7DC;
-    margin-bottom: 20px;
-    
-}
-#about p {
-    color: #8E8D8A;
-    line-height: 1.6;
-    font-weight: bold;
-}
+
+
+
 /* 
 
 #EAE7DC
@@ -24,20 +22,61 @@ body {
 #E85A4F
 */
 
-#about {
-    background-color: #EAE7DC;
-    padding: 20px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-#about .About-Container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    /* Initial position off-screen */
-    transform: translateY(-100%);
-    /* Ensure it's centered horizontally as well */
-    text-align: center;
-    /* Apply the animation */
-    animation: slideDown 1s forwards ease-out;
+
+.hero-intro {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+.hero-subheading {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+}
+.project-button {
+  background-color: #E98074;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px auto;
+  cursor: pointer;
+  top: 60%;
+  left: 50%;
+}
+.project-button:hover {
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.left {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  color: black;
+
 }
 
 @keyframes slideDown {
@@ -49,28 +88,48 @@ body {
     }
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-/* Container needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* The button used to open the dropdown */
-  .dropbtn {
-    background-color: #D8C3A5;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  
 
+
+.about-container {
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Space out text and image */
+  align-items: center; /* Align items vertically */
+  gap: 2rem; /* Add space between the two sides */
+  padding: 4rem 2rem; /* Add padding around the section */
+}
+
+.about-left {
+  flex: 1; /* Allow the left side to take up equal space */
+  padding: 1rem;
+}
+
+.about-right {
+  flex: 1; /* Allow the right side to take up equal space */
+  padding: 1rem;
+}
+
+.about-right ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.about-right li {
+  margin-bottom: 0.5rem; /* Add space between skills */
+  font-weight: bold; /* Make skills stand out */
+}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column; /* Stack the content vertically */
+  }
+
+  .about-left,
+  .about-right {
+    flex: none; /* Reset flex behavior */
+    width: 100%; /* Make both sides full-width */
+  }
+}
 nav {
   width: 100%;
   display: flex;
