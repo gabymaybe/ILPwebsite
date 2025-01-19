@@ -4,6 +4,7 @@
     <title>About Gabe Meredith</title>
     <link rel="stylesheet" type="text/css" href="CSS\about.css">
     <link rel="stylesheet" type="text/css" href="CSS\style.css">
+  
     <!-- other head elements -->
 </head>
 
@@ -13,8 +14,8 @@
         <nav>
             <ul>
             <li><a href="home.html">Home</a> </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">My Projects</a></li>
             <li> <a href="contact.html" class="split"> Contact me!</a></li>
            </ul>
        
@@ -31,19 +32,57 @@
 
 <!-- About Portion-->
 <section id="about" class="about">
+  <h1 class="header">About Me</h1>
+  <div class="about-container">
     <div class="about-left">
-        <h1>About Me</h1>
-        <p>Hi, I'm Gabe Meredith, an upcoming freshman at Cornell University. I'm passionate about Machine Learning and AI technologies. My journey began during quarantine when I signed up for a Data Science course, and I’ve been exploring this field ever since.</p>
-        <p>Outside of tech, I enjoy playing chess, working out, and video games.</p>
+      <p>
+        Hi, I'm Gabe Meredith, an upcoming freshman at Cornell University. I'm passionate about Machine Learning and AI technologies. My journey began during quarantine when I signed up for a Data Science course, and I’ve been exploring this field ever since. Outside of tech, I enjoy playing chess, working out, and video games.
+      </p>
+    </div>
+    <div class="about-right">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">PyTorch</div>
+        <div class="skill-box">Tensorflow</div>
+        <div class="skill-box">Machine Learning</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Java</div>
       </div>
-      <div class="about-right">
-        <h2>Skills</h2>
-        <ul>
-          <li>Python</li>
-          <li>PyTorch</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>C++</li>
-        </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h1 class="header">My Machine Learning Projects</h1>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h2>Emoji Predictor:Emojify</h2>
+      <p>Used GloVe embeddings and a neural network to predict emojis based on text input. Achieved 90% accuracy.</p>
+      <p><strong>Technologies:</strong> Python, PyTorch, NLP</p>
+      <img src="emoji_predictor.png" alt="Emoji Predictor Project" />
+      <div class="project-links">
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+        <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
       </div>
+    </div>
+    <!-- repeat for other projects-->
+    <div class="project-card">
+      <h2>AI generated Art</h2>
+      <p>Used neural style transfer to overlay a specific style of painting onto a content image</p>
+      <p><strong>Technologies:</strong> Python, PyTorch, Neural Networks</p>
+      <div class="gif-container">
+        <img id="gif" src="Images/rome.jpg" alt="Static preview" />
+        <button id="play-gif-btn">Click me to combine the Colosseum with the starry night!</button>
+        <script src="gif.js"></script>
+      </div>
+      <img src="emoji_predictor.png" alt="Emoji Predictor Project" />
+      <div class="project-links">
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+        <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+
+    </div>
 </section>
