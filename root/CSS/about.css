@@ -1,9 +1,11 @@
 html {
   scroll-behavior: smooth;
+
 }
 
 
 body {
+    background: linear-gradient(to bottom, #EAE7DC, #D8C3A5);
     background-color: #EAE7DC;
     font-family: Arial, sans-serif;
     color: #000;
@@ -32,8 +34,8 @@ body {
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -59,6 +61,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  
 }
 
 .hero-intro {
@@ -75,6 +78,20 @@ body {
   text-align: center;
   width: 100%;
 }
+
+
+#dynamic-text {
+  display: inline-block;
+  border-right: 2px solid #E85A4F;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .project-button {
   background-color: #E98074;
   border: none;
@@ -196,7 +213,7 @@ body {
 
 .projects {
   padding: 4rem 2rem;
-  background-color: #EAE7DC;
+
 }
 
 .projects-header {
@@ -267,7 +284,20 @@ body {
 #play-gif-btn:hover {
   background-color: #004b8c;
 }
-
+.video-container {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.video {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto; 
+}
 nav {
   width: 100%;
   display: flex;

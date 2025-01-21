@@ -7,6 +7,8 @@
   
     <!-- other head elements -->
 </head>
+<body>
+  
 
 
 <div class="grid-container"> 
@@ -25,13 +27,14 @@
 
 <div class="vertical-icons"> <!-- inspired minimalistic icons-->
   <a href="https://www.linkedin.com/in/gabriel-meredith-836652285/" target="_blank" class="icon linkedin"></a>
-  <a href="https://github.com" target="_blank" class="icon github"></a>
+  <a href="https://github.com/gabymaybe" target="_blank" class="icon github"></a>
 </div>
 
 <section class="hero"> 
     <!-- Maybe get an image?-->
      <h1 class="hero-intro">Hey, I'm Gabriel Meredith.</h1>
-     <h2 class="hero-subheading"> High School senior passionate about coding and problem-solving!</h2>
+     <h2 class="hero-subheading"> High School senior passionate about <span id="dynamic-text"></span> </h2>
+     <script src="dynamicheading.js"></script>
      <a href="#projects" class="project-button">Checkout some of my projects!</a>
 </section>
 
@@ -87,7 +90,24 @@
         <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
       </div>
     </div>
+    <div class="project-card">
+      <h2>Self-Driving Car Computer vision</h2>
+      <p>Used a Convolutional Neural network to simulate self-driving car</p>
+      <p><strong>Technologies:</strong> Python, PyTorch, Neural Networks</p>
+      <div class="video-container">
+        <video class="video" controls>
+          <source src="Images/CNNCARVID4WEBSITE.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+        <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
+      </div>
+    </div>
 
 
     </div>
+  </body>
 </section>
