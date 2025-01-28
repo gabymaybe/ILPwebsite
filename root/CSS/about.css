@@ -5,7 +5,7 @@ html {
 body {
   cursor: none;
   margin: 0;
-  background: linear-gradient(to bottom, #747474, #272727);
+  background: linear-gradient(to bottom, #272727, white);
   font-family: Arial, sans-serif;
   color: #000;
 }
@@ -248,21 +248,49 @@ body {
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
   gap: 2rem;
-  position: relative; /* Ensure cards stack below the blob */
 
 }
-
-.project-card {
-  background: rosybrown;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.laptop-container {
+  position: relative;
   text-align: center;
-  
 }
+.laptop {
+  width: 100%;
+}
+.project-card {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 5rem;
+  margin-bottom: 11rem;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.laptop {
+  width: 100%;
+  display: block;
+}
+
+.laptop-content {
+  position: inherit;
+  top: 20%; /* Adjust based on laptop screen position */
+  left: 10%; /* Adjust for horizontal alignment */
+  width: 80%; /* Content should fit within the screen area */
+  color: black;
+  text-align: left;
+  object-fit: cover;
+}
+
 
 .project-card img {
   max-width: 100%;
@@ -339,8 +367,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #D8C3A5;
-  
+  background-color: #747473; 
+
 }
 
 li {
