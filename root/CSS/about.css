@@ -3,7 +3,7 @@ html {
 
 }
 body {
-  cursor: none;
+  /* cursor: none; */
   margin: 0;
   background: linear-gradient(to bottom, #272727, white);
   font-family: Arial, sans-serif;
@@ -60,11 +60,11 @@ body {
 }
 
 .linkedin {
-  background-image: url('../Images/linkedinlogo.png');
+  background-image: url('../Images/linkedinlogo-removebg-preview.png');
 }
 
 .github {
-  background-image: url('../Images/githubicon.png');
+  background-image: url('../Images/githubicon-removebg-preview.png');
 }
 
 .icon:hover {
@@ -248,8 +248,8 @@ body {
 }
 
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 
   justify-content: center;
 
@@ -258,10 +258,15 @@ body {
 }
 .laptop-container {
   position: relative;
-  text-align: center;
+ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .laptop {
-  width: 100%;
+  width: 90%;
+  height: auto;
 }
 .project-card {
   display: grid;
@@ -278,7 +283,7 @@ body {
 
 .laptop {
   width: 100%;
-  display: block;
+  max-width: 500px;
 }
 
 .laptop-content {
@@ -312,18 +317,24 @@ body {
   background: #004b8c;
 }
 .gif-container {
-  text-align: center;
-  margin: 2rem auto;
+  position: absolute;
+  top: 24%; /* Adjust to fit inside laptop screen */
+  left: 20%;
+  width: 61%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures no overflow outside laptop */
 }
 
 #gif {
-
-    width: 100%; /* Scale down based on the parent container */
-    max-width: 400px; /* Set a maximum width for the image */
-    height: 400px; /* Maintain the aspect ratio */
-    display: block; /* Prevent inline behavior */
-    margin: 0 auto; /* Center the image */
-  }
+  
+  width: 100%;  /* Let it scale based on the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevents stretching */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
 
 
 #play-gif-btn {
@@ -341,18 +352,24 @@ body {
   background-color: #004b8c;
 }
 .video-container {
-  width: 100%;
-  max-width: 400px;
-  height: 400px;
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: 25%; /* Adjust to fit inside laptop screen */
+  left: 20%;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures no overflow outside laptop */
 }
 .video {
   width: 100%;
-  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  max-width: 900px;
   height: 400px;
   display: block;
-  margin: 0 auto; 
+ 
 }
 nav {
   width: 100%;
