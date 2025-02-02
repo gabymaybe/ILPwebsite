@@ -5,7 +5,7 @@ html {
 body {
   /* cursor: none; */
   margin: 0;
-  background: linear-gradient(to bottom, #272727, white);
+  background: url(../Images/subtle-prism\ \(1\).svg);
   font-family: Arial, sans-serif;
   color: #000;
 }
@@ -169,26 +169,42 @@ body {
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
 .about-container {
-  display: flex; /* Enable Flexbox */
-  align-items: flex-start; /* Vertically align items */
-  justify-content: space-between; /* Space out text and image */
   gap: 2rem; /* Add space between the two sides */
+  margin: auto;
+  max-width: 120rem;
+  margin-bottom: 15rem;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   
 }
-
-
-.about-left {
-  flex: 1; /* Allow the left side to take up equal space */
-  padding: 1rem;
-  font-size: 1rem;
-  text-align: left;
+.about-content-description {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color:  rgb(0, 0, 0);
 }
 
+.about-left {
+
+  padding: 1rem;
+
+  text-align: left;
+}
+.about-content-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+.hyperlink-proj {
+  color: rgb(48, 48, 197);
+  text-decoration: underline;
+}
 .about-right {
   flex: 1; /* Allow the right side to take up equal space */
   padding: 1rem;
@@ -319,13 +335,14 @@ body {
 .gif-container {
   position: absolute;
   top: 24%; /* Adjust to fit inside laptop screen */
-  left: 20%;
+  left: 19%;
   width: 61%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden; /* Ensures no overflow outside laptop */
+  border-radius: 20px;
 }
 
 #gif {
@@ -353,20 +370,21 @@ body {
 }
 .video-container {
   position: absolute;
-  top: 25%; /* Adjust to fit inside laptop screen */
+  top: 23%; /* Adjust to fit inside laptop screen */
   left: 20%;
   width: 60%;
-  height: 50%;
+  height: 53%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden; /* Ensures no overflow outside laptop */
+  border-radius: 20px;
 }
 .video {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  max-width: 900px;
+
+  object-fit: cover;
+  max-width: 800px;
   height: 400px;
   display: block;
  
