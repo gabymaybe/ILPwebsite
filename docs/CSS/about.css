@@ -344,7 +344,7 @@ body {
   top: 22%; /* Adjust to fit inside laptop screen */
   left: 19%;
   width: 61%;
-  height: auto;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -354,10 +354,10 @@ body {
 
 .img-project-content {
   width: 100%;
-
+  height: 100%;
   object-fit: cover;
-  max-width: 400px;
-  height: 300px;
+
+  
   display: block; 
 }
 .img-project-container-emoji {
@@ -368,6 +368,7 @@ body {
   height: auto;
   display: flex;
   align-items: center;
+  object-fit: contain;
   justify-content: center;
   overflow: hidden; /* Ensures no overflow outside laptop */
   border-radius: 20px;
@@ -433,7 +434,7 @@ body {
 .video {
   width: 100%;
 
-  object-fit: cover;
+  object-fit: contain;
   max-width: 800px;
   height: 400px;
   display: block;
