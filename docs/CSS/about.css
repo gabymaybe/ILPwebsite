@@ -357,6 +357,12 @@ body {
   overflow: hidden; /* Ensures no overflow outside laptop */
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Stack laptop and text */
+    text-align: center; /* Center text */
+  }
+}
 
 .img-project-content {
   width: 100%;
