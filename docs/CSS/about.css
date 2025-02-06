@@ -268,30 +268,34 @@ body {
 }
 
 .projects-grid {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr;
 
-  justify-content: center;
-
-  gap: 2rem;
+  gap: 2rem; /* Adds spacing between projects */
+  
+  max-width: 1200px;
+  margin: auto;
 
 }
 .laptop-container {
   position: relative;
- 
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  left: -25%;
 }
 .laptop {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 .project-card {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
+  grid-template-columns: 60% 40%;
+  gap: 5rem; /* Space between the laptop and text */
+  align-items: center; /* Vertically centers content */
+  justify-content: flex-start;
+  width: 100%;
   margin-bottom: 11rem;
 }
 
@@ -314,6 +318,8 @@ body {
   color: black;
   text-align: left;
   object-fit: cover;
+  flex: 2;
+  max-width: 700px;
 }
 
 
@@ -363,10 +369,9 @@ body {
   top: 29%; /* Adjust to fit inside laptop screen */
   left: 21%;
   width: 59%;
-  height: 35%;
-  display: block;
+  height: 50%;
+  display: flex;
   align-items: center;
-  object-fit: cover;
   justify-content: center;
   overflow: hidden; /* Ensures no overflow outside laptop */
   border-radius: 20px;
@@ -374,10 +379,8 @@ body {
 
 .img-project-content-emoji {
   width: 100%;
-
-  object-fit: cover;
-  max-width: 200px;
-  height: 200px;
+  height: 100%;
+  object-fit: contain;
   display: block; 
 }
 
