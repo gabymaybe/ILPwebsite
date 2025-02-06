@@ -339,6 +339,49 @@ body {
 .project-links a:hover {
   background: #004b8c;
 }
+.img-project-container {
+  position: absolute;
+  top: 22%; /* Adjust to fit inside laptop screen */
+  left: 19%;
+  width: 61%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures no overflow outside laptop */
+  border-radius: 20px;
+}
+
+.img-project-content {
+  width: 100%;
+
+  object-fit: cover;
+  max-width: 400px;
+  height: 300px;
+  display: block; 
+}
+.img-project-container-emoji {
+  position: absolute;
+  top: 29%; /* Adjust to fit inside laptop screen */
+  left: 20%;
+  width: 59%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures no overflow outside laptop */
+  border-radius: 20px;
+}
+
+.img-project-content-emoji {
+  width: 100%;
+
+  object-fit: cover;
+  max-width: 200px;
+  height: 200px;
+  display: block; 
+}
+
 .gif-container {
   position: absolute;
   top: 24%; /* Adjust to fit inside laptop screen */
@@ -464,4 +507,10 @@ li a:hover {
 .footer p {
   font-size: 1rem;
   margin: 10px 0;
+}
+.horizontal-icons {
+  display: flex;
+  justify-content: center;  /* Centers the icons horizontally */
+  gap: 20px;  /* Adds spacing between icons */
+  padding: 20px 0;  /* Adds vertical padding */
 }
