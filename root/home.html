@@ -2,6 +2,9 @@
 <html>
     <head>
     <title>About Gabe Meredith</title>
+
+                
+
     <link rel="stylesheet" type="text/css" href="CSS\about.css">
     <link rel="stylesheet" type="text/css" href="CSS\style.css">
   
@@ -18,7 +21,6 @@
             <li><a href="home.html">Home</a> </li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">My Projects</a></li>
-            <li> <a href="#contact" class="split"> Contact me!</a></li>
            </ul>
        
         </nav>
@@ -64,13 +66,16 @@
       </p>
     </div>
     <div class="about-right">
-      <h2>Skills</h2>
+      <h2 class="about-content-title">Skills</h2>
       <div class="skills-grid">
         <div class="skill-box">Python</div>
         <div class="skill-box">PyTorch</div>
         <div class="skill-box">Tensorflow</div>
         <div class="skill-box">Machine Learning</div>
         <div class="skill-box">Java</div>
+        <div class="skill-box">Project Management</div>
+        <div class="skill-box"></div>
+        <div class="skill-box"></div>
         
       </div>
     </div>
@@ -79,13 +84,13 @@
 </section>
 
 <section id="projects" class="projects">
-  <h1 class="header">My Machine Learning Projects</h1>
+  <h1 class="header">Some of My Machine Learning Projects</h1>
   <div class="projects-grid"> 
 
     <div class="project-card">
       <div class="laptop-container"> 
         <div class="laptop-content">
-      <img src="/Images/laptop-removebg-preview.png" alt="Laptop Mockup" class="laptop">
+      <img src="Images/laptop-removebg-preview.png" alt="Laptop Mockup" class="laptop">
       <div class="video-container">
         <video class="video" controls>
           <source src="Images/CNNCARVID4WEBSITE.mp4" type="video/mp4"/>
@@ -94,8 +99,11 @@
       </div>
       </div>
       <div class="project-description">
-      <h2 class="project-title">AI generated Art</h2>
-      <p class="project-content-description">Used neural style transfer to overlay a specific style of painting onto a content image<</p>
+      <h2 class="project-title">Computer Vision: Self-Driving Car</h2>
+      <p class="project-content-description">Ever wondered what a self-driving car "sees" while it is driving? 
+        In this project, I created a Convolutional Neural Network 
+        that mimics what self-driving cars see and how they work
+      </p>
       <p><strong>Technologies:</strong> Python, PyTorch, NLP</p>
      
       <div class="project-links">
@@ -109,7 +117,7 @@
     <div class="project-card"> 
       <div class="laptop-container"> 
         <div class="laptop-content">
-      <img src="/Images/laptop-removebg-preview.png" alt="Laptop Mockup" class="laptop">
+      <img src="Images/laptop-removebg-preview.png" alt="Laptop Mockup" class="laptop">
       <img src="emoji_predictor.png" alt="Emoji Predictor Project"/>
         </div>
       </div>
@@ -118,8 +126,7 @@
       <p class="project-content-description">Used GloVe embeddings and a neural network to predict emojis based on text input. Achieved 90% accuracy.</p>
       <p><strong>Technologies:</strong> Python, PyTorch, NLP</p>
       <div class="project-links"> 
-        <a href="https://github.com/your-repo" target="_blank">GitHub</a>
-        <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
+        <a href="https://github.com/gabymaybe/Emojify" target="_blank">GitHub</a>
       </div>
     </div>
     </div>
@@ -128,7 +135,7 @@
         <div class="project-card">
           <div class="laptop-container"> 
             <div class="laptop-content">
-          <img src="/Images/laptop-removebg-preview.png" alt="Laptop Mockup" class="laptop">
+          <img src="Images/laptop-removebg-preview.png" alt="Laptop Mockup" class="laptop">
           <div class="gif-container">
             <img id="gif" src="Images/rome.jpg" alt="Static preview" />
             </div>
@@ -196,6 +203,18 @@
 
   </body>
 --> 
-<section id="contact"class="contact">
+<footer class="footer">
+  <div class="footer-container">
+      <h2>Contact Me</h2>
+      <p>Interested in collaborating? Let's connect!</p>
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/gabriel-meredith-836652285/" target="_blank" class="icon linkedin"></a>
+        <a href="https://github.com/gabymaybe" target="_blank" class="icon github"></a>
+          <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      
+      <p class="copyright">&copy; 2025 Gabriel Meredith. All rights reserved.</p>
+  </div>
+</footer>
 
-</section>

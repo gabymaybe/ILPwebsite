@@ -1,12 +1,12 @@
 html {
   scroll-behavior: smooth;
-
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
   /* cursor: none; */
   margin: 0;
   background: url(../Images/subtle-prism\ \(1\).svg);
-  font-family: Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #000;
 }
 #blob {
@@ -87,6 +87,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase ;
   font-weight: bold;
   font-size: 36px;
   color: #ffffff;
@@ -172,6 +173,7 @@ body {
   font-size: 4rem;
   margin-bottom: 2rem;
   font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .about-container {
   gap: 2rem; /* Add space between the two sides */
@@ -206,34 +208,36 @@ body {
   text-decoration: underline;
 }
 .about-right {
-  flex: 1; /* Allow the right side to take up equal space */
+ 
   padding: 1rem;
-  font-size: 1rem;
+ 
   text-align: right;
 }
 
 .about-right h2 {
-  font-size: 1.5rem;
+ 
   margin-bottom: 1rem;
   text-align: center;
 }
 
 /* Skills Grid */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem; /* Space between skill boxes */
 }
 
 .skill-box {
-  background-color: #E98074;
+  background-color: #4d4847;
   color: white;
-  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: .75rem;
+  font-size: 1.5rem;
 }
 
 /* Responsive Design for Smaller Screens */
@@ -317,6 +321,9 @@ body {
   max-width: 100%;
   border-radius: 5px;
   margin: 1rem 0;
+}
+.project-content-description {
+  font-size: 1.5rem;
 }
 
 .project-links a {
@@ -434,4 +441,27 @@ li a:hover {
 }
 .main-info p {
   text-align: center;
+}
+
+.footer {
+  background-color: #8E8D8A; /* Neutral gray from your palette */
+  color: #EAE7DC;  /* Light text color */
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 10px 0;
 }
