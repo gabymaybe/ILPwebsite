@@ -99,9 +99,23 @@ body {
   text-align: center;
   width: 100%;
   color: #5bacea;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease-out forwards;
+  animation-delay: 0.5s; /* Delay effect for a smoother entrance */
 }
 
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
@@ -117,6 +131,7 @@ body {
   }
 }
 
+
 .project-button {
   background-color: #5bacea;
   border: none;
@@ -130,10 +145,16 @@ body {
   top: 60%;
   left: 50%;
   text-decoration: none;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease-out forwards;
+  animation-delay: 2s; /* Delay effect for a smoother entrance */
+
 }
 .project-button:hover {
   font-size: 20px;
   transition-duration: 0.4s;
+
 }
 
 .center {
@@ -151,15 +172,6 @@ body {
   left: 0%;
   color: black;
 
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
 }
 
 
@@ -189,7 +201,8 @@ body {
 .about-content-description {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color:  rgb(0, 0, 0);
+  color:  #F5F5F5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .about-left {
